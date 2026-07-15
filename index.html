@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do liste Javascript !</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <h1>Mes taches</h1>
+
+                <div class="progress-bar">
+                    <div class="progress">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-right">
+
+                <h2 id="percentage">0%</h2>
+
+                <div class="task-counter">0/0 completés</div>
+            </div>
+        </header>
+
+        <section class="add-task">
+
+            <input type="text" type="text" id="taskInput" placeholder="Ajouter une nouvelle tache...">
+
+            <div class="priorty">
+                <button class="priority-btn active" data-priority="high" >HIGH</button>
+
+                <button class="priority-btn" data-priority="medium">MEDIUM</button>
+
+                <button class="priority-btn" data-priority="low">LOW</button>
+            </div>
+
+            <button id="addBtn">Ajouter</button>
+
+
+        </section>
+
+
+
+        <section class="filters">
+            <div class="left-filters">
+                <button class="filter-active" data-filter="all">Toutes</button>
+
+                <button class="filter" data-filter="active">Actives</button>
+
+                <button class="filter" data-filter="completed">Completés</button>
+            </div>
+
+            <div class="right-filters">
+                <button id="clearCompleted">Effacer les taches completées</button>
+            </div>
+
+        </section>
+
+
+        <section>
+            <ul id="taskList"></ul>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
